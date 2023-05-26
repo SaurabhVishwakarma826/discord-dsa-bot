@@ -113,11 +113,11 @@ def increseCount():
     question_count += 4
     print(question_count)
 
-schedule.every().day.at('09:00').do(send_questions)
-schedule.every().day.at('16:00').do(send_answers)
-schedule.every().day.at('16:00').do(send_answers121)
-schedule.every().day.at('16:00').do(send_answers221)
-schedule.every().day.at('16:05').do(increseCount)
+schedule.every().day.at('15:30').do(send_questions)
+schedule.every().day.at('15:30').do(send_answers)
+schedule.every().day.at('15:30').do(send_answers121)
+schedule.every().day.at('15:30').do(send_answers221)
+schedule.every().day.at('15:30').do(increseCount)
 
 
 
@@ -132,4 +132,4 @@ def run_schedule():
 if __name__ == '__main__':
     schedule_thread = threading.Thread(target=run_schedule)
     schedule_thread.start()
-    app.run()
+    app.run(host="0.0.0.0",port=500,debug=True)
