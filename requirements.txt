@@ -2,4 +2,4 @@ django_scheduler==0.10.1
 Flask==2.2.2
 Requests==2.31.0
 schedule==1.2.0
-flask run
+
