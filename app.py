@@ -113,11 +113,11 @@ def increseCount():
     question_count += 4
     print(question_count)
 
-schedule.every().day.at('15:30').do(send_questions)
-schedule.every().day.at('15:30').do(send_answers)
-schedule.every().day.at('15:30').do(send_answers121)
-schedule.every().day.at('15:30').do(send_answers221)
-schedule.every().day.at('15:30').do(increseCount)
+schedule.every().day.at('12:30').do(send_questions)
+schedule.every().day.at('22:30').do(send_answers)
+schedule.every().day.at('22:30').do(send_answers121)
+schedule.every().day.at('22:30').do(send_answers221)
+schedule.every().day.at('22:30').do(increseCount)
 
 
 
